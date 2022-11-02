@@ -1,0 +1,56 @@
+@host = http://localhost:
+@port = 8080
+
+POST {{host}}{{port}}/api/v1/line?c=100 HTTP/1.1
+Content-Type: application/json
+Authorization: Basic base64-user-password
+
+{
+    "name": "sample",
+    "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+}
+
+
+###
+POST {{host}}{{port}}/api/v1/200 HTTP/1.1
+Content-Type: application/json
+Authorization: Basic base64-user-password
+
+{
+    "name": "sample",
+    "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+}
+
+
+###
+GET {{host}}{{port}}/api/v1/read HTTP/1.1
+Content-Type: application/json
+Authorization: Basic base64-user-password
+
+
+
+
+###
+GET {{host}}{{port}}/error HTTP/1.1
+Content-Type: application/json
+Authorization: Basic base64-user-password
+
+{
+    "name": "sample",
+    "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+}
+
+
+
+
+
+###
+POST https://httpstat.us/200 HTTP/1.1
+
+
+
+
+
+
+###
+POST https://api.line.me/v2/bot/richmenu/bulk/link
